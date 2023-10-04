@@ -1,0 +1,11 @@
+<p>profile works!</p>
+<!-- src/app/profile/profile.component.html -->
+
+<div *ngFor="let profile of profiles" class="profile">
+    <img [src]="profile.photoUrl" alt="{{ profile.name }} Photo" />
+    <h2>{{ profile.name }}</h2>
+    <p>{{ profile.description }}</p>
+    <button (click)="showMap(profile.address)">Summary</button>
+  </div>
+  
+  

@@ -1,0 +1,9 @@
+<div id="map" style="height: 400px;">
+    <ngx-leaflet
+      [leafletOptions]="options"
+      [leafletLayersControl]="layersControl"
+      [leafletLayers]="layers"
+      (leafletMapReady)="onMapReady($event)"
+    ></ngx-leaflet>
+  </div>
+  
